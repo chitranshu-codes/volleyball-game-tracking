@@ -151,6 +151,20 @@ There is a lack of high-quality, annotated datasets for Volleyball compared to F
 
 Processing 4K footage frame-by-frame with Optical Flow and Deep Learning is computationally expensive. To ensure the system runs on standard consumer hardware, we had to optimize the tracking buffers and limit the resolution of the analysis stream. This also makes tracking the ball difficult.
 
+Here is the updated point regarding the **Color Classification** issue. You can add this to your "Limitations & Challenges" section.
+
+I have framed it technically, explaining *why* the computer gets confused (lighting, bounding box noise) rather than just saying "it fails."
+
+---
+
+### 5. Color Classification Ambiguity
+
+While the K-Means clustering approach works for distinct colors (e.g., Red vs. Blue), it faces significant challenges in real-world scenarios:
+
+* **Bounding Box Noise:** The detected bounding box often includes background pixels (court floor) or player skin tone. If a player is bending down, the "background" color might dominate the "jersey" color in the pixel histogram, causing the system to assign them to the wrong team.
+* **Lighting Conditions:** Shadows and uneven stadium lighting can drastically alter the RGB values of a jersey. A white jersey in a shadow often looks grey or blue to the computer, leading to misclassification.
+* **Similar Hues:** In matches where teams wear similar shades (e.g., Navy Blue vs. Black), the K-Means algorithm struggles to find a clear separation boundary between the two clusters.
+
 ---
 
 ## 🛠️ Installation & Usage
