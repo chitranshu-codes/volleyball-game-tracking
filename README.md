@@ -155,8 +155,6 @@ Here is the updated point regarding the **Color Classification** issue. You can 
 
 I have framed it technically, explaining *why* the computer gets confused (lighting, bounding box noise) rather than just saying "it fails."
 
----
-
 ### 5. Color Classification Ambiguity
 
 While the K-Means clustering approach works for distinct colors (e.g., Red vs. Blue), it faces significant challenges in real-world scenarios:
