@@ -88,7 +88,6 @@ To make the system feasible with a single video feed, the following engineering 
 **Assumption 1: The "Flat Earth" Model (Z = 0)**
 * *Logic:* We assume all relevant gameplay happens on the floor (2D plane).
 * *Implication:* This works perfectly for player feet. However, it introduces error for the **ball**, which moves in 3D space. A ball 5 meters in the air is mathematically interpreted as being "further away" on the ground.
-* *Correction:* We implemented a clamping mechanism in the Mini-Map visualization to constrain the ball within reasonable bounds, preventing it from "flying out of the stadium" visually.
 
 
 **Assumption 2: Static Camera Position**
