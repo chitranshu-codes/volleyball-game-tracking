@@ -210,13 +210,13 @@ python main.py
 ## 📈 Objectives Achieved
 
 Despite the complexity of the sport, this project successfully delivers:
-✅ A working end-to-end pipeline from raw video to analytical output.
-✅ Stable tracking of 12+ entities simultaneously.
-✅ A visually coherent Tactical Map that mimics professional broadcast tools.
-✅ A proof-of-concept that single-camera analytics is viable for Volleyball with proper constraints.
+* ✅ A working end-to-end pipeline from raw video to analytical output.
+* ✅ Stable tracking of 12+ entities simultaneously.
+* ✅ A visually coherent Tactical Map that mimics professional broadcast tools.
+* ✅ A proof-of-concept that single-camera analytics is viable for Volleyball with proper constraints.
 
 ---
 
-**Author:** Chitranshu Singh Rawat
-**Domain:** Mechanical Engineering / Computer Vision / AI
+**Author:** Chitranshu Singh Rawat | 
+**Domain:** Mechanical Engineering / Computer Vision / AI | 
 **Location:** India
