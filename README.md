@@ -113,7 +113,7 @@ There is a lack of high-quality, annotated datasets for Volleyball compared to F
 
 ### 4. High-Resolution Processing
 
-Processing 4K footage frame-by-frame with Optical Flow and Deep Learning is computationally expensive. To ensure the system runs on standard consumer hardware, we had to optimize the tracking buffers and limit the resolution of the analysis stream.
+Processing 4K footage frame-by-frame with Optical Flow and Deep Learning is computationally expensive. To ensure the system runs on standard consumer hardware, we had to optimize the tracking buffers and limit the resolution of the analysis stream. This also makes tracking the ball difficult.
 
 ---
 
