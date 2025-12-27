@@ -109,7 +109,7 @@ There is a lack of high-quality, annotated datasets for Volleyball compared to F
 ### 3. Camera Angles (Side vs. Broadcast)
 
 * **Side View (Success):** The system performs excellently on side-view footage where the teams are separated Left vs. Right.
-* **Broadcast/Third-Person View (Failure):** In standard TV angles (from behind the server), the depth compression makes it nearly impossible for a single camera to accurately measure distance. Players in the back row look like giants compared to players near the net due to perspective distortion.
+* **Broadcast/Third-Person View (Failure):** In standard TV angles (from behind the server), the depth compression makes it nearly impossible for a single camera to accurately measure distance. Players in the back row look like giants compared to players near the net due to perspective distortion. Tactical map creation was not possible with only behind the server view.
 
 ### 4. High-Resolution Processing
 
