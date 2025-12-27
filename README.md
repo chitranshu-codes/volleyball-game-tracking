@@ -33,8 +33,6 @@ The project follows a modular pipeline approach, processing the video frame-by-f
 * **Class 2:** Referee 👮
 
 
-
-
 4. **`Object Tracking` (ByteTrack):**
 * Assigns a unique **Stable ID** to every detected entity.
 * Handles **Occlusion**: When players cross each other or cluster at the net, the tracker maintains their identity using a motion buffer.
