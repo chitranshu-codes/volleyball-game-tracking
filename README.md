@@ -85,24 +85,24 @@ The problem was decomposed into sequential stages to ensure modularity:
 
 To make the system feasible with a single video feed, the following engineering assumptions were made:
 
-* **Assumption 1: The "Flat Earth" Model (Z = 0)**
+**Assumption 1: The "Flat Earth" Model (Z = 0)**
 * *Logic:* We assume all relevant gameplay happens on the floor (2D plane).
 * *Implication:* This works perfectly for player feet. However, it introduces error for the **ball**, which moves in 3D space. A ball 5 meters in the air is mathematically interpreted as being "further away" on the ground.
 * *Correction:* We implemented a clamping mechanism in the Mini-Map visualization to constrain the ball within reasonable bounds, preventing it from "flying out of the stadium" visually.
 
 
-* **Assumption 2: Static Camera Position**
+**Assumption 2: Static Camera Position**
 * *Logic:* The system assumes the camera does not zoom or pan aggressively during the clip.
 * *Implication:* If the camera moves significantly, the coordinate system (homography matrix) would shift, causing the tactical map to become inaccurate.
 * *Note:* While we experimented with **Optical Flow** to estimate camera movement, the most stable results for this version were achieved using static camera clips.
 
 
-* **Assumption 3: Jersey Uniformity**
+**Assumption 3: Jersey Uniformity**
 * *Logic:* We assume that the majority of a player's upper body (torso) represents their team color.
 * *Implication:* The system automatically crops the top half of the bounding box to sample colors, avoiding confusion with shorts or shoes that might be neutral colors (black/white).
 
 
-* **Assumption 4: Linear Ball Motion (Interpolation)**
+**Assumption 4: Linear Ball Motion (Interpolation)**
 * *Logic:* When the ball disappears (due to motion blur or occlusion), we assume it travels in a relatively straight line between the last seen point and the next reappearance.
 * *Correction:* We utilized **Pandas Interpolation** to mathematically fill the gaps, creating a smooth trajectory even when the detector misses a few frames.
   
